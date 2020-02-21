@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <style>
+        .filterDiv {
+            float: left;
+            background-color: #2196F3;
+            color: #ffffff;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            margin: 2px;
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .container {
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+    </style>
+
+
+    <form>
+
+
+        <h3>Filter DIV Elements</h3>
+
+        <section>
+
+            <div id="myBtnContainer">
+
+                <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+                <button class="btn" value="talleres" onclick="filterSelection('talleres')"> Talleres</button>
+                <button class="btn" value="freelance" onclick="filterSelection('freelance')"> Freelance</button>
+                <button class="btn" value="licitaciones" onclick="filterSelection('licitaciones')">
+                    Licitaciones</button>
+                <button class="btn" value="reactivacion" onclick="filterSelection('reactivacion')">
+                    Reactivación</button>
+                <button class="btn" value="volanteo" onclick="filterSelection('volanteo')"> Volanteo</button>
+                <button class="btn" value="comercio electronico" onclick="filterSelection('comercio electronico')">
+                    Comercio
+                    Electrónico</button>
+                <button class="btn" value="propios telemercadeo referidos"
+                    onclick="filterSelection('propios telemercadeo referidos')"> Propios
+                    Telemercadeo Referidos</button>
+                <button class="btn" value="propios" onclick="filterSelection('propios')"> Propios</button>
+                <button class="btn" value="emisora" onclick="filterSelection('emisora')"> Emisora</button>
+                <!-- No further options -->
+                <button class="btn" value="cliente nuevo" onclick="filterSelection('cliente nuevo ')"> Cliente
+                    Nuevo</button> <!-- No further options -->
+                <button class="btn" value="correspondencia"
+                    onclick="filterSelection('correspondencia')">Correspondencia</button> <!-- No further options -->
+                <button class="btn" value="conjuntos" onclick="filterSelection('conjuntos')"> Conjuntos</button>
+                <!-- No further options -->
+                <button class="btn" value="tienda a tienda" onclick="filterSelection('tienda a tienda')"> Tienda a
+                    Tienda</button> <!-- No further options -->
+                <button class="btn" value="domicilios" onclick="filterSelection('domicilios')"> Domicilios</button>
+                <!-- No further options -->
+                <button class="btn" value="tliente nuevo" onclick="filterSelection('cliente nuevo')"> Cliente
+                    Nuevo</button><!-- No further options -->
+                <button class="btn" value="telemercadeo" onclick="filterSelection('colors')"> Telemercadeo</button>
+                <!-- No further options -->
+                <button class="btn" value="referidos" onclick="filterSelection('referidos')"> Referidos</button>
+                <!-- No further options -->
+                <button class="btn" value="corporativo" onclick="filterSelection('corporativo')"> Corporativo </button>
+                <button class="btn" value="licitaciones" onclick="filterSelection('licitaciones')">Licitaciones</button>
+                <!-- No further options -->
+                <button class="btn" value="volanteo" onclick="filterSelection('volanteo')"> Volanteo </button>
+                <!-- No further options -->
+            </div>
+
+            <div class="container">
+                <div class="filterDiv talleres">Devia Romero Edward Antonio</div>
+                <div class="filterDiv talleres">Palomeque Salinas Javier</div>
+                <div class="filterDiv talleres">Matinez Alison Nicoll</div>
+                <div class="filterDiv talleres">Freddy Sneyder Castillo Viruta</div>
+                <div class="filterDiv talleres">Retirados 80</div>
+                <div class="filterDiv talleres">Taller no Registrado 80</div>
+                <div class="filterDiv talleres">Montaña Marin Jackeline</div>
+                <div class="filterDiv talleres">Rios Pedraza Mayerly</div>
+                <div class="filterDiv talleres">Alarxon Torres Jose Yezid</div>
+                <div class="filterDiv talleres">Retirados 170</div>
+                <div class="filterDiv talleres">Taller no Registrado 170</div>
+                <div class="filterDiv talleres">Martiez Pablo Emilio</div>
+                <div class="filterDiv talleres">Retirados 13</div>
+                <div class="filterDiv talleres">Retirados 13</div>
+                <div class="filterDiv talleres">Taller no Registrado 13</div>
+                <div class="filterDiv talleres">Hernandez Angelica</div>
+                <div class="filterDiv talleres">Hernadez Sandra</div>
+                <div class="filterDiv talleres">Milena Gomez</div>
+                <div class="filterDiv talleres">Luz Dary Morales Navas</div>
+                <div class="filterDiv talleres">Quiroga Alexandra</div>
+                <div class="filterDiv talleres">Taller no Registrado Celta</div>
+                <div class="filterDiv talleres">Yenifer Navarro</div>
+                <div class="filterDiv talleres">Yenny Castillo</div>
+                <div class="filterDiv talleres">Yenny Paola Forero</div>
+                <div class="filterDiv talleres">Patricia Solano</div>
+                <div class="filterDiv talleres">Tatiana Osorio</div>
+                <div class="filterDiv talleres">Retirados Celta</div>
+                <div class="filterDiv propios">Aviso</div>
+                <div class="filterDiv propios">Bonos Otro CDA</div>
+                <div class="filterDiv propios">Parque</div>
+                <div class="filterDiv propios">Camila Rodriguez</div>
+                <div class="filterDiv propios">Valla Publicitaria</div>
+                <div class="filterDiv propios">Renovaciones CDA</div>
+                <div class="filterDiv comercio electronico">Facebook</div>
+                <div class="filterDiv comercio electronico">Google</div>
+                <div class="filterDiv comercio electronico">Instagram</div>
+                <div class="filterDiv comercio electronico">Waze</div>
+                <div class="filterDiv comercio electronico">Email Marketing</div>
+                <div class="filterDiv referidos">Referidos Sin Marcar 80</div>
+                <div class="filterDiv referidos">Referidos Sin Marcar 170</div>
+                <div class="filterDiv referidos">Referidos Sin Marcar 13</div>
+                <div class="filterDiv referidos">Referidos Sin Marcar CELTA</div>
+                <div class="filterDiv corporativo">Molano Mary Luz</div>
+                <div class="filterDiv corporativo">Lucero Martinez</div>
+                <div class="filterDiv corporativo">Leonela Cala</div>
+                <div class="filterDiv corporativo">Perez Rodriguez Carlos Eduardo</div>
+                <div class="filterDiv corporativo">Jonathan Rodriguez Amaya</div>
+                <div class="filterDiv corporativo">Espitia Paez Blanca Olivia</div>
+                <div class="filterDiv corporativo">Lozano Diana</div>
+                <div class="filterDiv corporativo">Mantilla Diana Sofía</div>
+                <div class="filterDiv corporativo">Retirados Corporativos</div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+        <section>
+            <h3>Producto</h3>
+            <select id="producto" name="producto">
+                <option value="----">----</option>
+                <option value="particular liviano">Particular Liviano</option>
+                <option value="taxi">Taxi</option>
+                <option value="publico liviano">Publico Liviano</option>
+                <option value="moto">Moto</option>
+                <option value="particular pesado">Particular Pesado</option>
+                <option value="publico pesado">Publico Pesado</option>
+                <option value="preventiva pesado">Preventiva Pesado</option>
+                <option value="preventiva liviano">Preventiva Liviano</option>
+
+            </select>
+
+        </section>
+
+
+        <section>
+            <h3>Canal</h3>
+
+            <select id="canal" name="canal">
+                <option value="----">----</option>
+                <option value="talleres">Talleres</option>
+                <option value="freelance">Freelance</option>
+                <option value="corporativo">Corporativo</option>
+                <option value="licitaciones">Licitaciones</option>
+                <option value="reactivacion">Reactivación</option>
+                <option value="volanteo">Volanteo</option>
+                <option value="comercio electronico">Comcercio Electrónico</option>
+                <option value="propios telemercado referidos">Propios Telemercadeo Referidos</option>
+                <option value="propios">Propios</option>
+                <option value="emisora">Emisora</option>
+                <option value="telemercadeo">Telemercadeo</option>
+                <option value="cliente nuevo">Cliente Nuevo</option>
+                <option value="correspondencia">Correspondencia</option>
+                <option value="referidos">Referidos</option>
+                <option value="conjuntos">Conjuntos</option>
+                <option value="tienda a tienda">Tienda a Tienda</option>
+                <option value="domicilios">Domicilios</option>
+            </select>
+
+        </section>
+
+
+        <section>
+            <h3>Asesor</h3>
+
+            <select id="asesor" name="asesor">
+                <option value="----">----</option>
+                <option value="jeiler">Jeiler Peña</option>
+                <option value="paul">Paul</option>
+                <option value="blanca">blanca</option>
+            </select>
+
+        </section>
+
+
+        <p> <button type="button" id="submit_button">Enviar Información</button> </p>
+
+
+
+
+    </form>
+
+
+    <script src="http://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="{{url_for('static', filename='form.js') }}"></script>
+
+
+
+</body>
+
+</html>
